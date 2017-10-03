@@ -1,8 +1,14 @@
+@charset "UTF-8";
+@@font-face {
+  font-family: quicksand;
+  src:url(quicksand-regular.woof) format ('woof'),
+  url(Quicksand-Regular.ttf) format('truetype');
+}
 /*
    Exercise 05_02
    TSS Typographic Style Sheet
-   Author:
-   Date:
+   Author:Yamilex Godinex
+   Date:9.27.17
 
    Filename: tss_styles.css
 
@@ -10,13 +16,52 @@
 
 
 /* HTML and Body Styles */
+html{
+  background-color: hsl(27, 72%, 72%);
+}
+body{
+  color: rgb (91, 91, 91);
+  background-color: ivory;
+  font-family: Verdana,Geneva, sans-serif;
+}
+h1{font-size: 2.2em;}
+h2{font-size: 1.5em}
 
-
+h1, h2 {
+  font-family: quicksand, verdana, geneva, sans-serif;
+  letter-spacing: 0.1em;
+}
+aside blockquote{
+  color: rgb(232, 165, 116);
+}
+nav > ul {
+  line-height: 2em;
+}
+body > foot address {
+background-color: rgb (222, 128, 60);
+color: rgba(255, 255, 225,0.7);
+font: normal small-caps bold 0.9em/3em quicksand, verdana, geneva, sans-serif;
+text-align: center;
+}
+<link rel="stylesheet" href="tss_layout.css">
+<link rel="stylesheet" href="tss_styles.css">
 /* Heading Styles */
-
-
+article#about_tss h1{
+  color: white;
+  background-color: rgb(222, 128, 60);
+}
+article#about_tss h2{
+  color: white;
+  background-color: rgb(235, 177, 131);
+}
+article.syllabus h1, article.syllabus h2{
+background-color: rgb(255,185,255);
+color:rgb(101,101,101);
+}
 /* Aside and Blockquote Styles */
-
+aside blockquote{
+  color:rgb(232, 165, 116);
+}
 
 /* Navigation Styles */
 
